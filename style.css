@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+#game{
+    background-image: url(pixel-art-game-scene-snow-with-pine-trees-clouds-8bit-stone_360488-248.webp);
+    background-size: 650px;
+    background-repeat: repeat;
+    width: 1362px;
+    height: 260px;
+    border: 1px solid black;
+    margin-top: 200px;
+    margin-left: 0px;
+}
+
+.button{
+    margin-left: 630px;
+    margin-top: 20px;
+    width: 100px;
+    height: 50px;
+    
+}
+input{
+    width: 100px;
+    height: 50px;
+}
+#character{
+   width: 60px;
+    position: relative;
+    top: 130px; 
+   left: 20px;
+}
+.steve{
+    margin-left: -30px;
+}
+#block{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 60px;
+    left: 480px;
+    animation: block 3s infinite linear;
+}
+
+#block1{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;
+    top: 70px;
+    left: 480px;
+    animation: block 4s infinite linear;
+}
+.animate{
+    animation: jump 500ms ; 
+}
+.t1{
+    margin-left: 1200px;
+    margin-top: -330px;
+}
+.arrow{
+    transform: rotate(22deg);
+    margin-top: 10px;
+}
+#timer{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+@keyframes jump {
+    0%{ top: 150px;}
+    10%{top: 100px;}
+    20%{top: 70px;}
+    60%{top: 60px;}
+    80%{top: 100px;}
+    100%{top: 150px;}
+}
+@keyframes block {
+    0%{left: 1300px;}
+    100%{left:-40px;}
+}
+@keyframes block1 {
+    0%{left: 1300px;}
+    100%{left:-40px;}
+}
+@media (max-width: 575px) {
+    #game{
+        width: 574px;
+
+    }
+    .button{
+        margin-left: 0;
+    }
+    input{
+        left: 0;
+    }
+    .t1{
+        margin-left: 500px;
+    }
+    @keyframes block {
+        0%{left: 500px;}
+        100%{left:0px;}
+    }
+    @keyframes block1 {
+        0%{left: 500px;}
+        100%{left:0px;}
+    }
+    #block{
+        animation: block 2s infinite linear;
+    }
+    #block1{
+        animation: block 4s infinite linear;
+    }
+    @keyframes jump {
+        0%{ top: 150px;}
+        10%{top: 100px;}
+        20%{top: 40px;}
+        40%{top: 35px;}
+        60%{top: 50px;}
+        80%{top: 100px;}
+        100%{top: 150px;}
+    }
+}
+@media (max-width: 475px) {
+    #game{
+        width: 474px;
+
+    }
+    .button{
+        margin-left: 0;
+    }
+    input{
+        left: 0;
+    }
+    .t1{
+        margin-left: 500px;
+    }
+    @keyframes jump {
+        0%{ top: 150px;}
+        10%{top: 100px;}
+        20%{top: 30px;}
+        40%{top: 35px;}
+        60%{top: 30px;}
+        80%{top: 100px;}
+        100%{top: 150px;}
+    }
+    @keyframes block {
+        0%{left: 500px;}
+        100%{left:0px;}
+    }
+    @keyframes block1 {
+        0%{left: 500px;}
+        100%{left:0px;}
+    }
+    #block1{
+        animation: block 3s infinite linear;
+       
+    }
+    #block{
+        animation: block 2s infinite linear;
+    }
+}
+@media (max-width: 375px) {
+    #game{
+        width: 440px;
+
+    }
+    .button{
+        margin-left: 0;
+    }
+    input{
+        left: 0;
+    }
+    .t1{
+        margin-left: 300px;
+    }
+    @keyframes jump {
+        0%{ top: 150px;}
+        10%{top: 100px;}
+        20%{top: 60px;}
+        40%{top: 55px;}
+        60%{top: 50px;}
+        80%{top: 100px;}
+        100%{top: 150px;}
+    }
+    @keyframes block {
+        0%{left: 500px;}
+        100%{left:0px;}
+    }
+    @keyframes block1 {
+        0%{left: 500px;}
+        100%{left:0px;}
+    }
+    #block1{
+        animation: block 3s infinite linear;
+       
+    }
+    #block{
+        animation: block 2s infinite linear;
+    }
+}
